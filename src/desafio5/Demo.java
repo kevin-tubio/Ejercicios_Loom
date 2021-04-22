@@ -136,11 +136,11 @@ public class Demo {
 		String nombre, apellido;
 		
 		print("", "Escriba el nombre del contacto", "--------------------------------------");
-		nombre = buffer.readLine();
-
+		nombre = buffer.readLine().strip();
+				
 		print("", "Escriba el apellido del contacto", "--------------------------------------");
-		apellido = buffer.readLine();
-
+		apellido = buffer.readLine().strip();
+		
 		print("");
 
 		return new Contacto(nombre, apellido, "@");
@@ -150,14 +150,14 @@ public class Demo {
 		String nombre, apellido, mail;
 
 		print("", "Escriba el nombre del contacto", "--------------------------------------");
-		nombre = buffer.readLine();
-
+		nombre = buffer.readLine().strip();
+		
 		print("", "Escriba el apellido del contacto", "--------------------------------------");
-		apellido = buffer.readLine();
-
+		apellido = buffer.readLine().strip();
+		
 		print("", "Escriba el mail del contacto", "--------------------------------------");
-		mail = buffer.readLine();
-
+		mail = buffer.readLine().strip();
+		
 		print("");
 
 		return new Contacto(nombre, apellido, mail);
