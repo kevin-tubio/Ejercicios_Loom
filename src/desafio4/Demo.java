@@ -7,7 +7,7 @@ public class Demo {
 		
 		System.out.println("-------------------------------------------------------");
 		
-		empresa.agregarEmpleado(new Gerente("Ana", "García"));
+		empresa.agregarEmpleado(new Gerente("Ana", "Garcia"));
 		empresa.agregarEmpleado(new TransitorioDeTiempoCompleto("Pedro", "Perez Pereira"));
 		empresa.agregarEmpleado(new PermanenteDeTiempoParcial("Maria", "Lopez"));
 		empresa.agregarEmpleado(new TransitorioDeTiempoParcial("Sonia", "Agullo"));
