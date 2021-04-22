@@ -2,20 +2,8 @@ package desafio3;
 
 public class Gerente extends EmpleadoPermanente {
 
-	private int personalACargo;
-	
-	public Gerente(String nombre, String apellido) {
-		this(nombre, apellido, false, 0, 0, 0);
-	}
-	
-	public Gerente(String nombre, String apellido, boolean casado, int cantidadDeHijos, int antiguedad, int personalACargo) {
-		super(nombre, apellido, casado, cantidadDeHijos, antiguedad);
-		this.personalACargo = (personalACargo > 0 ? personalACargo : 0);
-	}
-	
-	@Override
-	public double calcularSueldo() {
-		return super.calcularSueldo() + ((2000 * personalACargo) * obtenerUR());
+	public Gerente(String nombreCompleto) {
+		super(nombreCompleto);
 	}
 	
 	@Override
